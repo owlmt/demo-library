@@ -1,0 +1,15 @@
+[package]
+name = "aes128-cbc-demo"
+version = "1.0.0"
+edition = "2021"
+description = "PostQ demo: AES-128-CBC encryption (classical, weak parameters)."
+
+[[bin]]
+name = "aes128_cbc_demo"
+path = "src/main.rs"
+
+[dependencies]
+aes = "0.8"
+cbc = { version = "0.1", features = ["alloc"] }
+rand = "0.8"
+hex = "0.4"
